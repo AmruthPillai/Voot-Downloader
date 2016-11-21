@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 echo "Paste the video URL from voot.com: "
 read url
@@ -9,6 +9,6 @@ ffmpeg=""
 php voot-downloader.php "$link" "$folder" "$ffmpeg"
 
 echo "Enter the bitrate that you want to download in: "
-read bitrate
+read quality
 
-php voot-downloader.php "$link" "$folder" "$ffmpeg" "$bitrate"
+php voot-downloader.php "$link" "$folder" "$ffmpeg" "$quality"
