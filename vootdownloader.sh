@@ -6,9 +6,9 @@ read url
 folder=$PWD/videos/
 ffmpeg=""
 
-php vootdownloader.php "$link" "$folder" "$ffmpeg"
+php vootdownloader.php "$url" "$folder" "$ffmpeg"
 
 echo "Enter the bitrate that you want to download in: "
 read quality
 
-php vootdownloader.php "$link" "$folder" "$ffmpeg" "$quality"
+php vootdownloader.php "$url" "$folder" "$ffmpeg" "$quality"
