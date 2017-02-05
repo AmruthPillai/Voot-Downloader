@@ -40,7 +40,7 @@
 		}
 	} else {
 		preg_match("/\"bitrate\":$argv[4].*?\"id\":\"(.*?)\"/", $result1, $flavorId);
-		$link = 'http://video.voot.com/enc/fhls/p/1982551/sp/198255100/serveFlavor/entryId/' . $entryId[1] . '/v/2/pv/1/flavorId/' . $flavorId[1] . '/name/a.mp4/index.m3u8';
+		$link = 'https://vootvideo.akamaized.net/enc/fhls/p/1982551/sp/198255100/serveFlavor/entryId/' . $entryId[1] . '/v/2/pv/1/flavorId/' . $flavorId[1] . '/name/a.mp4/index.m3u8';
 		echo "Live Stream URL: $link\n\n";
 
 		echo "Starting  LiveStreamer...\n\n";
